@@ -1,3 +1,4 @@
 # informatics
 If you’ve read this, know that you are wonderful.
-Ведутся тех. работы по оформлению
+Ведутся тех. работы по оформлению репозитория, пожалуйста позвоните позже
+
