@@ -5,3 +5,9 @@ I will definitely learn to sign my letters
 <p align="center">
   <img width="150" height="96" alt="hi" src="https://github.com/user-attachments/assets/733233d9-2d06-491d-9366-4d2cf19c5a4f" />
 </p>
+
+
+<h1>meme of the day:</h1>
+<p align="center">
+<img width="623" height="700" alt="15dohodchiviytext" src="https://github.com/user-attachments/assets/3410bf71-5727-4649-b47e-5ac2a11f04e1" />
+</p>
