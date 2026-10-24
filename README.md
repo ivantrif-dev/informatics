@@ -9,5 +9,5 @@ I will definitely learn to sign my letters
 
 <h1>meme of the day:</h1>
 <p align="center">
-<img width="623" height="700" alt="15dohodchiviytext" src="https://github.com/user-attachments/assets/3410bf71-5727-4649-b47e-5ac2a11f04e1" />
+<img width="320" height="372" alt="8e4107a0d45864413bb282506c9c5695" src="https://github.com/user-attachments/assets/c8d15a5d-0f80-4540-a919-4a852115ebd8" />
 </p>
