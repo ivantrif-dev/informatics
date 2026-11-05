@@ -58,8 +58,8 @@ int main() {
                     // Преобразование экранных координат в «математические»
                     float mathX = (mousePos.x - 400) / 30.0f;
                     float mathY = -(mousePos.y - 300) / 30.0f;
-             
 
+                  
                     userPoint.setPosition(mousePos.x - userPoint.getRadius(),
                         mousePos.y - userPoint.getRadius());
                     userPointExists = true;
@@ -68,8 +68,8 @@ int main() {
                     float y_1 = -3 * mathX + 1;
                     float y_2 = 2 * mathX - 1;
                     int zone = 0;
-
-                    if (mathY == y_1 || mathY == y_2) {
+                    float del = 0.000001f;
+                    if (std::abs(mathY - y_1) < del || std::abs(mathY - y_2) < del) {
                         zone = 0;
                     }
                     else if (mathY > y_1 && mathY < y_2) {
