@@ -57,7 +57,8 @@ int main() {
 
                     // Преобразование экранных координат в «математические»
                     float mathX = (mousePos.x - 400) / 30.0f;
-                    float mathY = -(mousePos.y - 300) / 100.0f;
+                    float mathY = -(mousePos.y - 300) / 30.0f;
+             
 
                     userPoint.setPosition(mousePos.x - userPoint.getRadius(),
                         mousePos.y - userPoint.getRadius());
@@ -68,7 +69,10 @@ int main() {
                     float y_2 = 2 * mathX - 1;
                     int zone = 0;
 
-                    if (mathY > y_1 && mathY < y_2) {
+                    if (mathY == y_1 || mathY == y_2) {
+                        zone = 0;
+                    }
+                    else if (mathY > y_1 && mathY < y_2) {
                         zone = 1;
                     }
                     else if (mathY < y_1 && mathY < y_2) {
@@ -81,9 +85,14 @@ int main() {
                         zone = 4;
                     }
                     
-                   
-                    coordinatesText.setString("Coordinates: (" + std::to_string(mathX) +
-                        ", " + std::to_string(mathY) + ") / zone: " + std::to_string(zone));
+                    if (zone != 0) {
+                        coordinatesText.setString("Coordinates: (" + std::to_string(mathX) +
+                            ", " + std::to_string(mathY) + ") / zone: " + std::to_string(zone));
+                    }
+                    else {
+                        coordinatesText.setString("Coordinates: (" + std::to_string(mathX) +
+                            ", " + std::to_string(mathY) + ") / zone: border");
+                    }
                 }
             }
         }
@@ -95,8 +104,8 @@ int main() {
         
 
         // 5 _ Замените на графики вашего варианта
-        drawGraph(window, [](float x) { return -3*x + 1; }, -10, 10, 30, 100, sf::Color::Red);
-        drawGraph(window, [](float x) { return 2*x - 1; }, -10, 10, 30, 100, sf::Color::Blue);
+        drawGraph(window, [](float x) { return -3 * x + 1; }, -10, 10, 30, 30, sf::Color::Red);
+        drawGraph(window, [](float x) { return 2 * x - 1; }, -10, 10, 30, 30, sf::Color::Blue);
 
 
         if (userPointExists) {
